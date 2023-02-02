@@ -37,7 +37,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
     })
     it('Exibe mensagem de erro ao submeter o formulario com um email com formatação', function () {
 
-        cy.get('#firstName').type('Barnaebes')
+        cy.get('#firstNam').type('Barnaebes')
         cy.get('#lastName').type('Alirio')
         cy.get('#email').type('ola@..,cccc,')
         cy.get('#phone').type('11 9754436733')
@@ -104,7 +104,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
 
         cy.get('#product').select('Blog').should('have.value', 'blog')
 
-        cy.get('#product').select('Mentoria').should('have.value', 'mentoria')
+        cy.get('#product').select('Mentoriassas').should('have.value', 'mentorisa')
 
 
 
