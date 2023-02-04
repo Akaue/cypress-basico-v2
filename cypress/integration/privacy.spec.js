@@ -1,8 +1,16 @@
 
 
-it('testando a pagina de privacidade', function(){
+// Utilizando lodash para repetir o teste, executando 3 vezes
 
-    cy.visit('./src/privacy.html')
+Cypress._.times(3, function(){
+
+
+    it('testando a pagina de privacidade', function(){
+
+        cy.visit('./src/privacy.html')
+    
+    
+    })
 
 
 })
